@@ -1,0 +1,18 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+  <GeometryModel3D x:Key="graphBar">
+    <GeometryModel3D.Material>
+      <DiffuseMaterial Brush="Fuchsia" />
+    </GeometryModel3D.Material>
+    <GeometryModel3D.Geometry>
+      <MeshGeometry3D Positions="0,0,0 1,0,0 0,1,0 1,1,0 0,0,1 1,0,1 0,1,1 1,1,1"
+                      Normals="0,0,-1 0,0,-1 0,0,-1 0,0,-1 0,0,1 0,0,1 0,0,1 0,0,1"
+
+                      TriangleIndices="0,2,1 1,2,3 0,1,5 0,5,4 0,4,2 2,4,6 1,3,5
+                                       3,7,5 2,7,3 2,6,7 4,5,6 5,7,6 " />
+    </GeometryModel3D.Geometry>
+  </GeometryModel3D>
+
+
+</ResourceDictionary>

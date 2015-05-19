@@ -1,0 +1,5 @@
+C:\Excelta\Business\7D\SevenDStudio\QuadraticSurface\bin\Debug\QuadraticSurface.dll
+C:\Excelta\Business\7D\SevenDStudio\QuadraticSurface\bin\Debug\QuadraticSurface.pdb
+C:\Excelta\Business\7D\SevenDStudio\QuadraticSurface\obj\x86\Debug\QuadraticSurface.dll
+C:\Excelta\Business\7D\SevenDStudio\QuadraticSurface\obj\x86\Debug\QuadraticSurface.pdb
+C:\Excelta\Business\7D\SevenDStudio\QuadraticSurface\obj\x86\Debug\QuadraticSurface.csprojResolveAssemblyReference.cache

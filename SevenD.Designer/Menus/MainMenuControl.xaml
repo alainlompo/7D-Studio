@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="SevenD.Designer.Menus.MainMenuControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="26" d:DesignWidth="600">
+    <StackPanel Orientation="Vertical" CanVerticallyScroll="True" Height="Auto" Width="Auto">
+        <Menu Name="mnuMainMenu" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="22" BorderThickness="2">
+            <Menu.BitmapEffect>
+                <DropShadowBitmapEffect/>
+            </Menu.BitmapEffect>
+            <MenuItem Header="_Files">
+                <MenuItem Header="_New">
+                    <MenuItem Header="_Solution" />
+                    <MenuItem Header="Project" />
+                    <MenuItem />
+                </MenuItem>
+                <MenuItem Header="_Open" />
+                <MenuItem Header="_Save" />
+                <MenuItem Header="Save _as" />
+                <Separator></Separator>
+                <MenuItem Header="_Import" />
+                <MenuItem Header="_Export" />
+                <Separator></Separator>
+                <MenuItem Header="E_xit" Click="MenuItem_Click" />
+            </MenuItem>
+            
+            <MenuItem Header="_Edit">
+                
+                
+                <MenuItem Header="Undo" />
+                <MenuItem Header="Redo" />
+                
+                <Separator></Separator>
+                <MenuItem Header="Hold" />
+                <MenuItem Header="Fetch" />
+                <Separator></Separator>
+                <MenuItem Header="Move" />
+                <MenuItem Header="Rotate" />
+                <MenuItem Header="Scale" />
+                
+            </MenuItem>
+
+
+
+            <MenuItem Header="_Views">
+
+
+                <MenuItem Header="Undo view change" />
+                <MenuItem Header="Redo view change" />
+
+                <Separator></Separator>
+                <MenuItem Header="View configuration" />
+                <Separator/>
+                <MenuItem Header="Set active view port" />
+                <Separator></Separator>
+                <MenuItem Header="Viewcube">
+                    <MenuItem Header="Show view cube" />
+                    <MenuItem Header="Show for active view" />
+                    <MenuItem Header="Show for all views" />
+                </MenuItem>
+                
+            </MenuItem>
+
+
+            <MenuItem Header="_Creation art">
+
+
+                <MenuItem Header="Standard primitives" />
+                <MenuItem Header="Extended primitives" />
+
+                <Separator></Separator>
+                <MenuItem Header="AEC objects" />
+                <MenuItem Header="particles" />
+                <MenuItem Header="compounds" />
+                <Separator/>
+                <MenuItem Header="NURBS" />
+                <MenuItem Header="Patch grid" />
+                <MenuItem Header="Dynamics" />
+                <MenuItem Header="Mental ray" />
+                <Separator/>
+                <MenuItem Header="Shapes" />
+                <MenuItem Header="Extended shapes" />
+                <Separator/>
+                <MenuItem Header="Lights" />
+                <MenuItem Header="Cameras" />
+                
+            </MenuItem>
+
+
+        </Menu>
+        
+    </StackPanel>
+</UserControl>

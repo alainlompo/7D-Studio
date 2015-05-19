@@ -1,0 +1,147 @@
+﻿<Window x:Class="SevenD.Designer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dps="clr-namespace:OpenSourceControls;assembly=DockPanelSplitter"
+        Title="Excelta 7D Studio 1.0.1.1" Height="350" Width="525" Loaded="MainWindow_Loaded">
+    <DockPanel Name="dpMainPanel" Background="LightGray"  Width="Auto" Height="Auto"  >
+        <DockPanel  Height="100"  Background="LightGray"  DockPanel.Dock="Top" Name="dpTopPanel"></DockPanel>
+        <dps:DockPanelSplitter DockPanel.Dock="Top" />
+        <DockPanel Name="dpMainBottomPanel" Height="Auto"  DockPanel.Dock="Top" Background="Brown" >
+            
+            <DockPanel Name="dpToolbarsPanel" Height="50" Background="Yellow" VerticalAlignment="Top" DockPanel.Dock="Top"></DockPanel>
+            <dps:DockPanelSplitter DockPanel.Dock="Top" />
+            <DockPanel Name="dpStoryBoardPanel" Height="50" Background="Violet" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" />
+            <DockPanel Name="dpMainDrawingPanel" Height="Auto" Background="AntiqueWhite">
+                <DockPanel Height="Auto" Width="150" HorizontalAlignment="Right" DockPanel.Dock="Right" Background="Bisque" Name="dpRightPrimitivesPanel" />
+                <dps:DockPanelSplitter DockPanel.Dock="Right"/>
+                <DockPanel Name ="dpMainViewportsPanel" Height="Auto" Width="Auto" Background="BurlyWood">
+                    
+                    <DockPanel Name="dpLeftMainViewportsPanel" Background="Chartreuse" Width="200" HorizontalAlignment="Left" DockPanel.Dock="Left">
+                        <DockPanel Name="dpLeftTopViewportPanel" Background="Ivory" Height="80" DockPanel.Dock="Top" VerticalAlignment="Top" >
+                            <Canvas Name="cvLeftTopArea" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <Canvas.Background>
+                                    <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">
+                                        <DrawingBrush.Drawing>
+                                            <DrawingGroup>
+                                                <GeometryDrawing Brush="White">
+                                                    <GeometryDrawing.Geometry>
+                                                        <RectangleGeometry Rect="0,0,1,1" />
+                                                    </GeometryDrawing.Geometry>
+                                                </GeometryDrawing>
+                                                <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />
+                                                <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />
+                                            </DrawingGroup>
+                                        </DrawingBrush.Drawing>
+                                    </DrawingBrush>
+                                </Canvas.Background>
+                               
+                            </Canvas>
+                            
+                            
+                            
+                        </DockPanel>
+                        <dps:DockPanelSplitter DockPanel.Dock="Top" />
+                        <DockPanel Name="dpLeftBottomViewportPanel" Background="MediumVioletRed" >
+
+                            <Canvas Name="cvLeftBottomArea" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <Canvas.Background>
+                                    <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">
+                                        <DrawingBrush.Drawing>
+                                            <DrawingGroup>
+                                                <GeometryDrawing Brush="White">
+                                                    <GeometryDrawing.Geometry>
+                                                        <RectangleGeometry Rect="0,0,1,1" />
+                                                    </GeometryDrawing.Geometry>
+                                                </GeometryDrawing>
+                                                <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />
+                                                <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />
+                                            </DrawingGroup>
+                                        </DrawingBrush.Drawing>
+                                    </DrawingBrush>
+                                </Canvas.Background>
+
+                            </Canvas>
+
+
+                        </DockPanel>
+                    </DockPanel>
+                    <dps:DockPanelSplitter DockPanel.Dock="Left" />
+                    <DockPanel Name="dpRightMainViewportsPanel" Background="DodgerBlue">
+                        <DockPanel Name="dpRightTopViewportPanel" Background="Turquoise" Height="80" VerticalAlignment="Top" DockPanel.Dock="Top">
+
+                            <Canvas Name="cvRightTopArea" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <Canvas.Background>
+                                    <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">
+                                        <DrawingBrush.Drawing>
+                                            <DrawingGroup>
+                                                <GeometryDrawing Brush="White">
+                                                    <GeometryDrawing.Geometry>
+                                                        <RectangleGeometry Rect="0,0,1,1" />
+                                                    </GeometryDrawing.Geometry>
+                                                </GeometryDrawing>
+                                                <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />
+                                                <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />
+                                            </DrawingGroup>
+                                        </DrawingBrush.Drawing>
+                                    </DrawingBrush>
+                                </Canvas.Background>
+
+                            </Canvas>
+
+
+
+                        </DockPanel>
+                        <dps:DockPanelSplitter DockPanel.Dock="Top" />
+                        <DockPanel Name="dpRightBottomViewportPanel" Background="WhiteSmoke">
+                            <Grid >
+                                <Viewport3D Name="MainViewPort3D">
+                                    <Viewport3D.Camera  x:Uid="camera_01">
+                                        <PerspectiveCamera x:Name="p_camera" Position="6,6,6" LookDirection="-1,-1,-1"
+                             UpDirection="0,0,1" FieldOfView="45" />
+                                    </Viewport3D.Camera>
+                                    <Viewport3D.Resources>
+                                    </Viewport3D.Resources>
+
+                                    <ModelVisual3D x:Name="MainModelVisual3D"
+                                                   
+                                                   
+                                                   >
+                                        <ModelVisual3D.Content>
+                                            <Model3DGroup x:Name="MainModel3DGroup">
+                                                <!--<AmbientLight Color="White" />-->
+                                                <DirectionalLight Direction="1,-1,-1" Color="#AEE" />
+                                                <DirectionalLight Direction="-1,-1,-1" Color="#EEA" />
+                                                <DirectionalLight Direction="0,0,1" Color="#A7A" />
+
+                                                <!-- Graph bars -->
+                                                <Model3DGroup x:Name="barGroup" />
+
+                                                <!-- Graph base -->
+                                                <StaticResource ResourceKey="graphBase"
+                                                                
+                                                                />
+                                            </Model3DGroup>
+                                        </ModelVisual3D.Content>
+                                    </ModelVisual3D>
+                                </Viewport3D>
+                                <Border Name="utilityBorder" Background="Transparent"  />
+
+                            </Grid>
+                            
+                        </DockPanel>
+                        
+                    </DockPanel>
+                    
+                    
+                </DockPanel>
+                
+            </DockPanel>
+            
+           
+            
+        </DockPanel> 
+        
+        
+        
+    </DockPanel>
+</Window>

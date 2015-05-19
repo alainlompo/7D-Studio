@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="SevenD.Designer.Primitives.Standard.StandardPrimitivesControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="190">
+    <WrapPanel FlowDirection="LeftToRight"  ItemHeight="24" ItemWidth="60" Height="Auto" Width="Auto" >
+        <Button Margin="2" Name="btnBox" Click="btnBox_Click">Box</Button>
+        <Button Margin="2">Sphere</Button>
+        <Button Margin="2">Cone</Button>
+        <Button Margin="2">Cylinder</Button>
+        <Button Margin="2">Cube</Button>
+        <Button Margin="2">Tore</Button>
+        <Button Margin="2">Ellipsoide</Button>
+        
+
+    </WrapPanel>
+</UserControl>

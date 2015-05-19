@@ -1,0 +1,124 @@
+﻿// Microsoft Public License (MS-PL, http://opensource.org/licenses/ms-pl.html.)
+
+Torus
+------------------
+r(u, v) = (a + b cos u)(cos v i + sin v j) + b sin u k
+r (y,t) = (a+b cos y)(cost i + sint j) + b siny k
+
+= (a+b cosy)cost i + (a+b cosy) sint j + b siny k
+
+x = (a+bcosy)cost
+z = (a+bcosy) sint
+yp = bsiny
+
+
+
+
+
+Revolution surface
+------------------
+
+r(u,v) = f(u)(cosv i + sinv j) + u k  (pour v allant de 0 à 2pi)
+
+r(y,t) = f(y)(cost i + sint j) + y k
+
+r(y,t) = f(y)*cost i + f(y)*sint j + y k
+
+
+r(y,t) =     | x = f(y)*cos(t)
+             | z = f(y)*sin(t)
+
+			 exemple : f(y) = y^2
+
+
+1.
+==========================================
+x = cos(t) + sin(s)
+y = sin(t) * cos(s)
+z = t
+
+1.1
+-------------------------------
+x = x(1)
+y = y(1)
+z = t*s
+
+1.2
+-------------------------------
+
+x = x(1)
+y = y(1)
+z = t (1 + s^2)
+
+1.3
+------------------------------
+x = cos(t)*(R + rcos(s))
+y = sin(t) * (R + rcos(s))
+z = z(1.2)
+
+
+1.4
+-----------------------------
+x = x(1.3)
+y = y(1.3)
+z = r*sin(s)
+
+
+2.
+==============================================
+x = Rsin(t)*sin(s)
+y = Rcos(t^2 + s^2)
+z = 3 * s^2
+
+3.
+==============================================
+z = x^2 - y^2
+
+4.
+===============================================
+x = cos(t)
+y = sin(t)
+z = s
+
+
+5.
+===============================================
+x = Rsin(t)cos(s)
+y = Rsin(t)sin(s)
+z = Rcos(t)
+
+
+5.1
+----------------------------
+x = x(5)
+y = y(5)
+z = Rcos(t^2)
+
+
+5.2
+---------------------------
+x = x (5)
+y = y(5)
+z = R cos(t^3)
+
+
+5.3
+--------------------------
+x = R*sin(t)cos(s^2)
+y = Rsin(t)sin(s)
+z = Rcos(t)
+
+
+
+=============================================================================================================================
+Ellipsoid
+
+x = acos(u)sin(v)
+y = bsin(u) sin(v)
+z = c*cos(v)
+
+==> sin(v) = y/(bsin(u))
+x = acos(u)*y/(bsin(u)) =  a*ycos(u)/(bsin(u)) = (a/b)*y/tg(u)
+z = c*cos(v)
+v = arcsin(y/bsin(u))
+z = c*cos(v)
