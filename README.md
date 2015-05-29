@@ -5,7 +5,8 @@ This is possible first because WPF relies on DirectX to do his work.
 It is possible because an open community knows no limits
 <br/>
 <br/>
-Here are a few screen shots
+Here are a few screen shots<br/>
+<br/>
 <a href="https://github.com/alainlompo/7D-Studio">
-  <img src="show/show_picture_001.png?raw=true" width="100px">
+  <img src="show/show_picture_001.png?raw=true" width="400px">
 </a>
