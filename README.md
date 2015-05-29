@@ -10,3 +10,12 @@ Here are a few screen shots<br/>
 <a href="https://github.com/alainlompo/7D-Studio">
   <img src="show/show_picture_001.png?raw=true" width="600px">
 </a>
+
+And also...
+
+<br/>
+<br/>
+<a href="https://github.com/alainlompo/7D-Studio">
+  <img src="show/show_picture_002.png?raw=true" width="600px">
+</a>
+
