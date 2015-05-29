@@ -18,4 +18,6 @@ And also...
 <a href="https://github.com/alainlompo/7D-Studio">
   <img src="show/show_picture_002.png?raw=true" width="600px">
 </a>
-
+<br/>
+<br/>
+We have already implemented zooming, rotating, and a number of 3D objects and shapes...take a look at the code to see for yourself
